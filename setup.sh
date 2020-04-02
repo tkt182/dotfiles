@@ -24,6 +24,11 @@ function main() {
         shift
     done
 
+    if [ ! -d "dotfiles" ] && [ ! -d ".git" ]; then
+        git clone https://github.com/tkt182/dotfiles.git
+        current_dir="$current_dir/dotfiles"
+    fi
+
     # default
     if [[ "$is_link" == false && "$is_update" == false ]]; then
         is_link="true"
