@@ -1,0 +1,90 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+;",            "command": "workbench.action.terminal.focus",
+                                    "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+;",            "command": "workbench.action.focusFirstEditorGroup",
+                                    "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+t h",          "command": "workbench.action.focusLeftGroup",
+                                    "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+t l",          "command": "workbench.action.focusRightGroup", 
+                                    "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+t ,",          "command": "workbench.action.terminal.focusPreviousPane",
+                                    "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+t .",          "command": "workbench.action.terminal.focusNextPane", 
+                                    "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeWindow",
+        "when": "!editorIsOpen && !multipleEditorGroups"
+    },
+    {
+        "key": "ctrl+k w",
+        "command": "-workbench.action.closeEditorsInGroup"
+    },
+    {
+        "key": "alt+right",
+        "command": "-workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+left",
+        "command": "-workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+    { "key": "ctrl+a",  "command": "editor.action.selectAll",
+                           "when": "editorTextFocus && !inDebugRepl" },
+    { "key": "ctrl+c",   "command": "editor.action.clipboardCopyAction",
+                           "when": "editorTextFocus && !inDebugRepl && vim.mode != 'Insert'" },
+    { "key": "ctrl+n",  "command": "workbench.action.files.newUntitledFile",
+                           "when": "editorTextFocus && !inDebugRepl && vim.mode != 'Insert'" },
+    { "key": "ctrl+v",  "command": "editor.action.clipboardPasteAction",
+                           "when": "editorTextFocus && !inDebugRepl && vim.mode == 'Insert'" },
+    {
+        "key": "ctrl+x",
+        "command": "editor.action.clipboardCutAction",
+                        "when": "editorTextFocus && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+t 0",
+        "command": "workbench.action.focusSideBar",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+t 0",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "sideBarFocus"
+    },
+    {
+        "key": "cmd+0",
+        "command": "-workbench.action.focusSideBar"
+    },
+    {
+        "key": "ctrl+t .",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "shift+cmd+]",
+        "command": "-workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+t ,",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "shift+cmd+[",
+        "command": "-workbench.action.previousEditor"
+    },
+]
+

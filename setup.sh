@@ -37,10 +37,15 @@ function main() {
     if [[ "$is_link" = true ]];then
         source $current_dir/.bin/lib/link_to_homedir.sh
         echo "#####################################################"
-        echo "$(basename "${BASH_SOURCE[0]:-$0}") link success"
+        echo "$(basename "${BASH_SOURCE[0]:-$0}") homedir link success"
+        echo "#####################################################"
+        source $current_dir/.bin/lib/link_to_configdir.sh
+        echo "#####################################################"
+        echo "$(basename "${BASH_SOURCE[0]:-$0}") app config link success"
         echo "#####################################################"
     fi
 
 }
 
+export EXEC_DATE=$(date '+%y%m%d-%H%M%S')
 main "$@"
