@@ -27,5 +27,7 @@
 
     // 諸々のctrlキーを使った操作が有効になる
     "vim.useCtrlKeys": true,
-    "editor.multiCursorModifier": "ctrlCmd"
+    //"editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderWhitespace": "boundary",
+    "terminal.integrated.shell.osx": "tmux",
 }
