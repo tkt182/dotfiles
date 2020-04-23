@@ -186,4 +186,11 @@
             "cmd": "tmux copy-mode"
         }
     },
+    {
+        "key": "ctrl+t d",
+        "command": "terminalCommandKeys.run",
+        "args": {
+            "cmd": "tmux detach"
+        }
+    },
 ]
