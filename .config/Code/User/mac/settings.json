@@ -29,5 +29,5 @@
     "vim.useCtrlKeys": true,
     //"editor.multiCursorModifier": "ctrlCmd",
     "editor.renderWhitespace": "boundary",
-    "terminal.integrated.shell.osx": "tmux",
+    "ruby.intellisense": "rubyLocate",
 }

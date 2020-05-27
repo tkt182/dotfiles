@@ -17,14 +17,6 @@
                                     "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+t ,",          "command": "workbench.action.terminal.focusPreviousPane",
-                                    "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+t .",          "command": "workbench.action.terminal.focusNextPane", 
-                                    "when": "terminalFocus"
-    },
-    {
         "key": "ctrl+w",
         "command": "-workbench.action.closeWindow",
         "when": "!editorIsOpen && !multipleEditorGroups"
@@ -87,110 +79,5 @@
     {
         "key": "shift+cmd+[",
         "command": "-workbench.action.previousEditor"
-    },
-    {
-        "key": "ctrl+t c",
-        "command": "terminalCommandKeys.run",
-        "args": {
-            "cmd": "tmux new-window"
-        }
-    },
-    {
-        "key": "ctrl+t n",
-        "command": "terminalCommandKeys.run",
-        "args": {
-            "cmd": "tmux next"
-        }
-    },
-    {
-        "key": "ctrl+t p",
-        "command": "terminalCommandKeys.run",
-        "args": {
-            "cmd": "tmux prev"
-        }
-    },
-    {
-        "key": "ctrl+t x",
-        "command": "terminalCommandKeys.run",
-        "args": {
-            "cmd": "tmux kill-pane"
-        }
-    },
-    {
-        "key": "ctrl+t 1",
-        "command": "terminalCommandKeys.run",
-        "args": {
-            "cmd": "tmux select-window -t 1"
-        }
-    },
-    {
-        "key": "ctrl+t 2",
-        "command": "terminalCommandKeys.run",
-        "args": {
-            "cmd": "tmux select-window -t 2"
-        }
-    },
-    {
-        "key": "ctrl+t 3",
-        "command": "terminalCommandKeys.run",
-        "args": {
-            "cmd": "tmux select-window -t 3"
-        }
-    },
-    {
-        "key": "ctrl+t 4",
-        "command": "terminalCommandKeys.run",
-        "args": {
-            "cmd": "tmux select-window -t 4"
-        }
-    },
-    {
-        "key": "ctrl+t 5",
-        "command": "terminalCommandKeys.run",
-        "args": {
-            "cmd": "tmux select-window -t 5"
-        }
-    },
-    {
-        "key": "ctrl+t 6",
-        "command": "terminalCommandKeys.run",
-        "args": {
-            "cmd": "tmux select-window -t 6"
-        }
-    },
-    {
-        "key": "ctrl+t 7",
-        "command": "terminalCommandKeys.run",
-        "args": {
-            "cmd": "tmux select-window -t 7"
-        }
-    },
-    {
-        "key": "ctrl+t 8",
-        "command": "terminalCommandKeys.run",
-        "args": {
-            "cmd": "tmux select-window -t 8"
-        }
-    },
-    {
-        "key": "ctrl+t 9",
-        "command": "terminalCommandKeys.run",
-        "args": {
-            "cmd": "tmux select-window -t 9"
-        }
-    },
-    {
-        "key": "ctrl+t [",
-        "command": "terminalCommandKeys.run",
-        "args": {
-            "cmd": "tmux copy-mode"
-        }
-    },
-    {
-        "key": "ctrl+t d",
-        "command": "terminalCommandKeys.run",
-        "args": {
-            "cmd": "tmux detach"
-        }
     },
 ]
