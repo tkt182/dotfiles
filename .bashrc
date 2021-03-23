@@ -2,15 +2,17 @@ export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 export CLICOLOR=1
 export LSCOLORS="DxGxcxdxCxegedabagacad"
 
-export PATH=~/bin:$PATH
+export PATH=~/bin:$HOME/.nodebrew/current/bin:$PATH
 
 
+alias grep='grep --color=auto'
 alias ll='ls -al'
 alias cdgit="cd ~/git"
 alias cdwork="cd ~/work"
 alias gitgraph='git log --graph --decorate --oneline'
 alias dcup='docker-compose up'
 alias dcexec='docker-compose exec'
+alias curl_header='curl -D - -s -o /dev/null '
 
 source /usr/local/etc/bash_completion.d/git-prompt.sh
 source /usr/local/etc/bash_completion.d/git-completion.bash

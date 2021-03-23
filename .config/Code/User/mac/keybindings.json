@@ -13,7 +13,15 @@
                                     "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+t l",          "command": "workbench.action.focusRightGroup", 
+        "key": "ctrl+t l",          "command": "workbench.action.focusRightGroup",
+                                    "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+t k",          "command": "workbench.action.focusAboveGroup",
+                                    "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+t j",          "command": "workbench.action.focusBelowGroup",
                                     "when": "editorTextFocus"
     },
     {
@@ -80,4 +88,10 @@
         "key": "shift+cmd+[",
         "command": "-workbench.action.previousEditor"
     },
+    { 
+        "key": "ctrl+t tab",
+        "command": "type",
+        "args": { "text": "\t" },
+        "when": "editorTextFocus"
+    } 
 ]
