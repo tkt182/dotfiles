@@ -20,6 +20,18 @@ function link_vscode_config() {
             done
         fi
     fi
+
+    if [ "$(uname)" == 'Linux' ]; then
+        # LinuxというよりはWSLなのでwindowsのpathを指定してます
+        local wslhome=`wslpath "$(wslvar USERPROFILE)"`
+        local destdir="$wslhome/AppData/Roaming/Code/User"
+        if [[ -d $destdir ]]; then
+            for f in $current_dir/User/win/*; do
+                # WSL経由でやるのでlinkではなくcopyにする
+                backup_and_copy $f "$destdir" $backupdir
+            done
+        fi
+    fi
 }
 
 link_vscode_config

@@ -1,0 +1,100 @@
+{
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
+    "window.zoomLevel": 0.1,
+    "search.exclude": {
+        "**/bower_components": true,
+        "**/vendor": true,
+        "**/env": true,
+        "tags":true,
+        "**/.svn": true,
+        "**/.git": true,
+        "**/.DS_Store": true
+    },
+    // システムのclipboardにコピー
+    "vim.useSystemClipboard":true,
+
+    // 検索に:を入れる
+    "vim.cmdLineInitialColon": true,
+
+    "vim.hlsearch": true,
+
+    // 言わずもがなeasymotion
+    "vim.easymotion": true,
+
+    // カーソル上にあるワードを"*"で検索
+    "vim.visualstar": true,
+
+    // 諸々のctrlキーを使った操作が有効になる
+    "vim.useCtrlKeys": true,
+    //"editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderWhitespace": "boundary",
+    "ruby.intellisense": "rubyLocate",
+    "editor.multiCursorModifier": "alt",
+    "beautify.language": {
+
+        "js": {
+            "type": [
+                "javascript",
+                "json",
+                "jsonc"
+            ],
+            "filename": [
+                ".jshintrc",
+                ".jsbeautifyrc"
+            ]
+        },
+        "css": [
+            "css",
+            "less",
+            "scss"
+        ],
+        "html": [
+            "htm",
+            "html",
+            "erb"
+        ]
+    },
+    "[erb]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "yaml.validate": false,
+
+    "editor.tabSize": 2,
+
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+
+    "[html]": {
+        "editor.tabSize": 2
+    }
+}
